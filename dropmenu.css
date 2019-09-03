@@ -1,0 +1,18 @@
+.drop-menu{
+    float: none;;
+}
+
+.drop-menu > ul {
+    position:absolute;
+    top:25px;
+    display:none;   
+}
+ 
+/*Делаем скрытую часть видимой*/
+.drop-menu:hover > ul {
+    display:block; 
+    width:250px;  /*Задаем ширину выпадающего меню*/      
+}
+.drop-menu:hover > ul > li {
+    float:none; /*Убираем горизонтальное позиционирование*/
+}

@@ -1,0 +1,39 @@
+.drop-down ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+}
+
+.drop-down a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background:#30A8E6; /*добавляем фон к пункту меню*/
+    color:#fff; /*меняем цвет ссылок*/
+    padding:0px 10px; /*добавляем отступ*/
+    font-family: arial; /*меняем шрифт*/
+    border-radius:4px; /*добавляем скругление*/
+    transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+
+    line-height:50px; /*ровняем меню по вертикали*/
+    display: block; 
+}
+
+.drop-down a:hover{
+    background: black;
+}
+
+.drop-down li {
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right:5px; /*Добавляем отступ у пунктов меню*/
+}
+
+@media (max-width: 1000px){
+    .drop-down li {
+        float:none; /*Размещаем список горизонтально для реализации меню*/
+        margin-right:0px; /*Добавляем отступ у пунктов меню*/
+        margin-top:21px; /*Добавляем отступ у пунктов меню*/        
+    }
+
+    .drop-down li {
+        margin-bottom:21px; /*Добавляем отступ у пунктов меню*/
+    }
+}
